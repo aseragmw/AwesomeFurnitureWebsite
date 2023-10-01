@@ -14,9 +14,23 @@ class NavBarDesktop extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text(
-            'AwesomeFurniture',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+          InkWell(
+            onTap: () {
+              Navigator.of(context).pushNamed(HOMEROUTE);
+            },
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Image.asset('assets/MeubelHouse_Logos-05.png'),
+                SizedBox(
+                  width: 10,
+                ),
+                Text(
+                  'AwesomeFurniture',
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                ),
+              ],
+            ),
           ),
           Row(
             children: [

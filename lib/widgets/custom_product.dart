@@ -8,20 +8,26 @@ class CustomProduct extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xffF4F5F7),
+      margin: const EdgeInsets.all(8),
+      color: const Color(0xffF4F5F7),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         mainAxisSize: MainAxisSize.min,
         children: [
           Image.asset('assets/image2.png'),
-          Text(
+          const Text(
             'Leviosa',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
           ),
-          Text('Stylish chair'),
-          Text(
+          const Text(
+            'Stylish chair',
+            style: TextStyle(
+              color: Color(0xff898989),
+            ),
+          ),
+          const Text(
             '200 \$',
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
           ),
         ],
       ),

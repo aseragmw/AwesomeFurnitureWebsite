@@ -23,7 +23,7 @@ class HeroSection extends StatelessWidget {
           width: 900,
           height: 600,
         ),
-        Positioned(left: 400, top: 250, child: heroContent)
+        Positioned(left: 380, top: 250, child: heroContent)
       ],
     ));
   }
@@ -48,14 +48,23 @@ class HeroContent extends StatelessWidget {
             'New Arrival',
             style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
           ),
+          SizedBox(
+            height: 10,
+          ),
           Text(
             'Discover Our $contentTitle Collection',
             style: TextStyle(
                 color: primaryColor, fontSize: 30, fontWeight: FontWeight.w700),
           ),
+          SizedBox(
+            height: 10,
+          ),
           Text(
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.',
             style: TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
+          ),
+          SizedBox(
+            height: 10,
           ),
           InkWell(
               onTap: () {

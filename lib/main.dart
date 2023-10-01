@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
       title: 'AwesomeFurniture',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        fontFamily: 'Poppins'
       ),
       initialRoute: HOMEROUTE,
       routes: {

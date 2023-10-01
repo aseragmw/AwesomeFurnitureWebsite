@@ -21,12 +21,13 @@ class HomeView extends StatelessWidget {
           children: [
             const NavBarDesktop(),
             HeroSection(
-                heroContent: HeroContent(sectionUrl: FURNITUREROUTE,contentTitle: 'Furniture'),
-                
+                heroContent: HeroContent(
+                    sectionUrl: FURNITUREROUTE, contentTitle: 'FURNITURE'),
                 backgroundImageUrl:
                     'assets/scandinavian-interior-mockup-wall-decal-background1.png'),
             HeroSection(
-                heroContent: HeroContent(sectionUrl: FURNITUREROUTE,contentTitle: 'Antika'),
+                heroContent: HeroContent(
+                    sectionUrl: FURNITUREROUTE, contentTitle: 'ANTIKA'),
                 backgroundImageUrl:
                     'assets/old-fashioned-camera-leather-suitcase-wooden-table-generative-ai.jpg'),
             Footer()
