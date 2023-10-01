@@ -55,6 +55,14 @@ class NavBarDesktop extends StatelessWidget {
                     Navigator.of(context).pushNamed(FURNITUREROUTE);
                   },
                   child: NavBarItem(title: 'Antika')),
+                  const SizedBox(
+                width: 100,
+              ),
+              InkWell(
+                  onTap: () {
+                    Navigator.of(context).pushNamed(CONTACTROUTE);
+                  },
+                  child: NavBarItem(title: 'Contact Us')),
             ],
           ),
           Row(

@@ -1,4 +1,5 @@
 import 'package:awesome_furniture/constants/routes.dart';
+import 'package:awesome_furniture/views/contact_view/contact_view.dart';
 import 'package:awesome_furniture/views/furniture_view/furniture_view.dart';
 import 'package:awesome_furniture/views/home_view/home_view.dart';
 import 'package:awesome_furniture/views/product_view/product_view.dart';
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
       routes: {
         HOMEROUTE: (context) => HomeView(),
         FURNITUREROUTE: (context) => FurnitureView(),
-        PRODUCTROUTE:(context) => ProductView()
+        PRODUCTROUTE:(context) => ProductView(),
+        CONTACTROUTE:(context) => ContactView()
         // ANTIKAROUTE:(context) => AntiView()
       },
     );

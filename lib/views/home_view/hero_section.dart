@@ -23,7 +23,7 @@ class HeroSection extends StatelessWidget {
           width: 900,
           height: 600,
         ),
-        Positioned(left: 380, top: 250, child: heroContent)
+        Positioned(left: 380, top: 150, child: heroContent)
       ],
     ));
   }

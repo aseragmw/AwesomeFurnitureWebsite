@@ -1,3 +1,4 @@
+import 'package:awesome_furniture/constants/app_colors.dart';
 import 'package:awesome_furniture/constants/routes.dart';
 import 'package:awesome_furniture/views/home_view/home_view.dart';
 import 'package:awesome_furniture/widgets/centered_view.dart';
@@ -119,6 +120,47 @@ class ProductView extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Text(
+                    'Description',
+                    style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
+                  ),
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Text(
+                  '''Embodying the raw, wayward spirit of rock n roll, the Kilburn portable active stereo speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+                
+Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced leather strap enables easy and stylish travel.''',
+                  style: TextStyle(color: Color(0xff9F9F9F)),
+                ),
+                SizedBox(
+                  height: 500,
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10.0),
+                        child: Image.asset(
+                          'assets/Group107.png',
+                          width: 500,
+                        ),
+                      );
+                    },
+                    itemCount: 2,
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                  ),
+                ),
+              ],
+            ),
+            Divider(),
+            SizedBox(
+              height: 30,
+            ),
+            Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
                     'Related Products',
                     style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
                   ),
@@ -139,6 +181,23 @@ class ProductView extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                   ),
                 ),
+                SizedBox(
+                  height: 20,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.of(context).pushNamed(FURNITUREROUTE);
+                  },
+                  child: Container(
+                    width: 200,
+                    height: 60,
+                    decoration: BoxDecoration(
+                      border: Border.all(color: primaryColor),
+                      // borderRadius: BorderRadius.all(Radius.circular(10))
+                    ),
+                    child: Center(child: Text('SHOW MORE')),
+                  ),
+                )
               ],
             ),
             Footer()
